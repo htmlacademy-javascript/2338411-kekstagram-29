@@ -4,7 +4,7 @@ const photo = Array.from({length:PHOTO_COUNT}, createPhoto);
 const PHOTO_COUNT = 25;
 const createPhoto = () => ({
   id:getRandomInteger(1, 25),
-  url:photos/getRandomInteger(1,25).jpg,
+  url:photo/getRandomInteger(1,25).jpg,
   description:getRandomArrayElement(DESCRIPTIONPHOTO),
   likes:getRandomInteger(15,200),
   comments:getRandomArrayElement(comment)
@@ -60,7 +60,7 @@ const MESSAGE = [
 'Лица у людей на фотке перекошены, как будто их избивают. Как можно было поймать такой неудачный момент?!',
 ];
 
-//функция по получению случаного числа из диапазона
+//функция по получению случайпного числа из диапазона
 const getRandomInteger = (a,b) => {
   const lower = Math.ceil(Math.min(a, b));
   const upper = Math.floor(Math.max(a, b));
