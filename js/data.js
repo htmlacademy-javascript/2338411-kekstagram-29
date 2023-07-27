@@ -58,6 +58,7 @@ const createComment = () => ({
   message: getRandomArrayElement(MESSAGES),
   name: getRandomArrayElement(NAMES)
 });
+
 //массив комментариев
 const createComments = (count) => Array.from ({length: count}, createComment);
 
@@ -72,3 +73,4 @@ const createPhoto = () => ({
 const createPhotos = () => Array.from({length:PHOTO_COUNT}, createPhoto);
 
 export {createPhotos};
+export {createComments};
