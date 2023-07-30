@@ -1,5 +1,5 @@
 import { createPhotos } from './data.js';
-import { addMiniPhotos } from './miniatures.js';
+import { addThumbnails } from './thumbnails.js';
 
-const miniPhotos = createPhotos();
-addMiniPhotos(miniPhotos);
+const thumbnails = createPhotos();
+addThumbnails(thumbnails);
