@@ -13,14 +13,14 @@ const renderComments = (comments) => {
   commentsList.append(commentsListFragment);
 };
 
-/*const openMore = document.querySelector('.social__comments-loader  comments-loader');//находим кнопку загрузить еще
-openMore.addEventListener('click',(evt) => { //обработчик на кнопку загрузить еще
-  evt.preventDefault();
-  document.querySelector('.social__comment-count').classList.remove('hidden');//открываем блоки social comments
-  document.querySelector('.comments-loader').classList.remove('hidden');//открываем загрузку новых комментариев
-  renderComments();//показываем по 5 комментариев
-});
-*/
+// const openMore = document.querySelector('.social__comments-loader');//находим кнопку загрузить еще
+// openMore.addEventListener('click',(evt) => { //обработчик на кнопку загрузить еще
+//   evt.preventDefault();
+//   document.querySelector('.social__comment-count').classList.remove('hidden');//открываем блоки social comments
+//   document.querySelector('.comments-loader').classList.remove('hidden');//открываем загрузку новых комментариев
+//   renderComments(comments);//показываем по 5 комментариев
+// });
+
 const popupElement = document.querySelector('.big-picture');
 const openPopup = ({url, likes, comments, description}) => {
   popupElement.classList.remove('hidden');
@@ -31,7 +31,7 @@ const openPopup = ({url, likes, comments, description}) => {
   popupElement.querySelector('.likes-count').textContent = likes;
   popupElement.querySelector('.comments-count').textContent = comments.length;
   popupElement.querySelector('.social__caption').textContent = description;
-  renderComments();//вызываем функцию для social comments
+  renderComments(comments);//вызываем функцию для social comments
 };
 
 export { openPopup };
